@@ -1,9 +1,6 @@
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  <<-CONTENT
-  Colin A. Bartlett<br>
-  colin at colinabartlett dot com<br>
-  215-292-2193
-  CONTENT
+  haml :resume
 end
