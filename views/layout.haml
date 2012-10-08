@@ -1,0 +1,107 @@
+!!! 5
+%html
+  %head
+    %title Colin A. Bartlett
+    %style
+      :sass
+        @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic)
+        @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,600)
+        body
+          font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif
+          font-weight: 400
+          text-align: center
+          margin: 0 10px
+          color: #3b2e2a
+          background-color: #ccc
+        a
+          text-decoration: underline
+          color: #3b2e2a
+          > :visited
+            color: #3b2e2a
+        h1
+          margin: 0 0 .2em 0
+        h2,h3
+          margin: 1.0em 0 .1em 0
+        p
+          margin: 0 0 .3em 0
+        .header
+          overflow: hidden
+          margin-bottom: 10px
+          clear: both
+          .item
+            text-transform: uppercase
+            margin-top: 25px
+            font-size: 20px
+            width: 168px
+            float: left
+            text-align: center
+          .logo
+            margin-top: 0
+            font-weight: 400
+            .first
+              font-size: 47px
+            .last
+              margin-top: -10px
+              font-size: 28px
+          .item
+        .center
+          margin: 0 auto
+          text-align: left
+          width: 850px
+          background-color: #fff
+          padding: 10px 0
+        .resume
+          font-family: 'PT Serif', serif
+          padding: 60px
+          margin: 20px
+          border: 1px solid #f6e6ce
+          background-color: #fef1e0
+          border-radius: 3px
+          box-shadow: 4px 4px 3px #aaa
+          -moz-box-shadow: 4px 4px 3px #aaa
+          -webkit-box-shadow: 4px 4px 3px #aaa
+          header
+            text-align: right
+        footer
+          overflow: hidden
+          margin: 10px 20px 10px 10px
+          background-color: #fff
+          font-size: 12px
+          > :first-child
+            float: left
+          > :last-child
+            float: right
+            text-align: right
+            margin: 15px 0 0 0
+            a
+              display: block
+              margin: 0 0 3px 0
+              color: #333
+              > :visited
+                color: #333
+
+  %body
+    .center
+      .header
+        .item Resume
+        .item Consulting
+        %h1.logo.item
+          .first Colin
+          .last Bartlett
+        .item Contact
+        .item Blog
+      .content
+        = yield
+      %footer
+        %section
+          %a{href: 'http://twitter.com/cbartlett'}<
+            %img{src: 'twitter.png'}
+          %a{href: 'http://facebook.com/cbartlett'}<
+            %img{src: 'facebook.png'}
+          %a{href: 'http://github.com/cbartlett'}<
+            %img{src: 'github.png'}
+        %section
+          %a{href: 'Colin Bartlett resume.pdf'}
+            PDF
+          %a{href: 'https://github.com/cbartlett/colinabartlett.com'}
+            Source
