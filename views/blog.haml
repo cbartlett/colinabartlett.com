@@ -11,4 +11,4 @@
         =post.title
     %time{datetime: post.date}
       =post.date.strftime('%A, %B %w, %Y')
-    %p= post.description
+    = @markdown.render post.description
