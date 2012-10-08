@@ -6,13 +6,18 @@
       :sass
         @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic)
         @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,600)
+        html
+          background: url(/images/#{ %w(kiev1 kiev2 peter1 peter2 peter3 moscow1 souzdal1).sample }.jpg) no-repeat center center fixed
+          -webkit-background-size: cover
+          -moz-background-size: cover
+          -o-background-size: cover
+          background-size: cover
         body
           font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif
           font-weight: 400
           text-align: center
           margin: 0 10px
           color: #3b2e2a
-          background-color: #ccc
           font-size: 15px
         a
           text-decoration: underline
@@ -57,6 +62,8 @@
           width: 850px
           background-color: #fff
           padding: 10px 0
+          border-right: 1px #000 solid
+          border-left: 1px #000 solid
         .resume
           padding: 20px 50px
           margin: 20px
