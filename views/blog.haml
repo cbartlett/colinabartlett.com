@@ -1,0 +1,14 @@
+%h1 Blog
+
+%p
+  My professional and technical ramblings in the form of commentary on useful links via
+  %a{href: 'http://pinboard.in/u:cbartlett/t:colinabartlett.com/'} pinboard.in
+
+- @posts.each do |post|
+  .post
+    %h2
+      %a{href: post.link}
+        =post.title
+    %time{datetime: post.date}
+      =post.date.strftime('%A, %B %w, %Y')
+    %p= post.description

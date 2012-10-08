@@ -68,6 +68,12 @@
           margin: 20px
           header
             text-align: right
+        .post
+          margin-bottom: 2.0em
+          time
+            font-weight: 600
+            display: block
+            margin-bottom: 0.5em
         footer
           overflow: hidden
           margin: 10px 20px 10px 10px
@@ -98,7 +104,8 @@
           .last Bartlett
         .item
           %a{href: '/contact'} Contact
-        .item Blog
+        .item
+          %a{href: '/blog'} Blog
       .content
         = yield
       %footer
