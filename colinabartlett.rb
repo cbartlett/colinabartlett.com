@@ -8,3 +8,7 @@ end
 get '/contact' do
   haml :contact
 end
+
+get '/consulting' do
+  haml :consulting
+end
