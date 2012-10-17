@@ -10,5 +10,5 @@
       %a{href: post.link}
         =post.title
     %time{datetime: post.date}
-      =post.date.strftime('%A, %B %w, %Y')
+      =post.date.strftime('%A, %B %e, %Y')
     = @markdown.render post.description
