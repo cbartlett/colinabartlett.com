@@ -5,6 +5,7 @@
     %style
       :sass
         @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,600)
+        @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah)
         html
           background-color: #666
         body
@@ -89,6 +90,35 @@
               color: #333
               > :visited
                 color: #333
+        .sticky
+          position: absolute
+          top: 65px
+          display: block
+          text-align: left
+          padding: 15px
+          margin: 0 auto 20px auto
+          width: 125px
+          height: 125px
+          font: 17px 'Gloria Hallelujah', cursive
+          line-height: 1.2
+          border: 0
+          border-radius: 3px
+          background: -webkit-linear-gradient(#F9EFAF, #F7E98D)
+          background: -moz-linear-gradient(#F9EFAF, #F7E98D)
+          background: -o-linear-gradient(#F9EFAF, #F7E98D)
+          background: -ms-linear-gradient(#F9EFAF, #F7E98D)
+          background: linear-gradient(#F9EFAF, #F7E98D)
+          box-shadow: 0 5px 8px rgba(0,0,0,0.15)
+          overflow: hidden
+          transition: box-shadow 0.5s ease
+          font-smoothing: subpixel-antialiased
+          max-width: 520px
+          max-height: 250px
+          transform: rotate(-7deg)
+          -ms-transform: rotate(-7deg)
+          -webkit-transform: rotate(-7deg)
+          -o-transform: rotate(-7deg)
+          -moz-transform: rotate(-7deg)
 
   %body
     .center
